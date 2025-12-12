@@ -6,7 +6,7 @@ public class NotificationSender {
   
   public void sendNotification(List<Notification> notifications, String message){
     for(Notification notification: notifications){
-      notification.sendNotification(message);
+       notification.sendNotification(message);
     }
   }
 }
