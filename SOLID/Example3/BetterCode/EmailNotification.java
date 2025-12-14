@@ -1,10 +1,9 @@
 package SOLID.Example3.BetterCode;
 
-public class EmailNotification extends Notification {
-   
+public class EmailNotification implements Notification{
   @Override
-  void sendNotification(String message){
-    System.out.println("Email notification: " + message);
+  public void sendNotification(String message){
+    
+    System.out.println("Email notification "+ message);
   }
-  
 }

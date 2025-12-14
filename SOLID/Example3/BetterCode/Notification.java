@@ -1,5 +1,5 @@
 package SOLID.Example3.BetterCode;
 
-public class Notification {
-  void sendNotification(String message){};
+public interface Notification {
+  void sendNotification(String message);
 }
