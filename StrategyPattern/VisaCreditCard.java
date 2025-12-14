@@ -1,4 +1,4 @@
-package SOLID.Example4.BetterCode;
+package StrategyPattern;
 
 public class VisaCreditCard extends CreditCard {
   private String CardNumber;
@@ -6,7 +6,12 @@ public class VisaCreditCard extends CreditCard {
   private String ExpiryDate;
   private String CVV;
 
-  
+  private RefundStrategy refundStrategy;
+
+  public VisaCreditCard() {
+    this.refundStrategy = new BankAccountRefundStrategy();
+  }
+
   @Override
   public void swipeAndPay() {
     // Implementation for swipe and pay
@@ -16,7 +21,7 @@ public class VisaCreditCard extends CreditCard {
   @Override
   public void doRefund() {
     // Implementation for refund
-    System.out.println("Processing refund on Visa Credit Card.");
+    this.refundStrategy.doRefund();
   }
 
   @Override
