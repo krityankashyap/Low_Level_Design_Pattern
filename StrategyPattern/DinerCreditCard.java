@@ -1,6 +1,6 @@
 package StrategyPattern;
 
-public class DinerCreditCard extends CreditCard implements tapAndPayCompatibleCard{
+public class DinerCreditCard extends CreditCard implements tapAndPayCompatibleCard, RefundStrategy{
 
   private String CardNumber;
   private String CardHolder;

@@ -9,7 +9,7 @@ public abstract class CreditCard {
   // Getters and Setters
 
   public abstract void swipeAndPay();
-  public abstract void doRefund();
+  // public abstract void doRefund();
   public abstract void onlinePayment();
   
 }

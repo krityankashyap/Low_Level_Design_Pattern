@@ -1,6 +1,6 @@
 package SOLID.Example4.BetterCode;
 
-public class VisaCreditCard extends CreditCard {
+public class VisaCreditCard extends CreditCard implements tapAndPayCompatibleCard, UpiCompatibleCreditCard{
   private String CardNumber;
   private String CardHolder;
   private String ExpiryDate;
@@ -25,5 +25,16 @@ public class VisaCreditCard extends CreditCard {
     System.out.println("Processing online payment with Visa Credit Card.");
   }
 
+  @Override
+  public void tapAndPay() {
+    // Implementation for tap and pay
+    System.out.println("Tapping Visa Credit Card for payment.");
+  }
 
+  @Override
+  public void upiPayment() {
+    // Implementation for UPI payment
+    System.out.println("Processing UPI payment with Visa Credit Card");
+    
+  }
 }

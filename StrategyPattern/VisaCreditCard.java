@@ -1,6 +1,6 @@
 package StrategyPattern;
 
-public class VisaCreditCard extends CreditCard {
+public class VisaCreditCard extends CreditCard implements RefundStrategy{
   private String CardNumber;
   private String CardHolder;
   private String ExpiryDate;

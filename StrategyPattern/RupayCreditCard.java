@@ -1,6 +1,6 @@
 package StrategyPattern;
 
-public class RupayCreditCard extends CreditCard implements UpiCompatibleCreditCard{
+public class RupayCreditCard extends CreditCard implements UpiCompatibleCreditCard, RefundStrategy{
   private String CardNumber;
   private String CardHolder;
   private String ExpiryDate;
