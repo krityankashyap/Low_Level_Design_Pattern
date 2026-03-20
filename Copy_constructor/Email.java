@@ -1,6 +1,6 @@
 package Copy_constructor;
 
-public class Email {
+public class Email implements Copyable<Email>{
    private String sender;
    private String recipient;
    private String subject;
@@ -20,6 +20,11 @@ public class Email {
     this.recipient = email.recipient;
     this.subject = email.subject;
     this.body = email.body;
+  }
+
+  @Override
+  public Email copy(){
+    return new Email(this);  // this is calling the copy constructor
   }
 
   // Getter Setter
