@@ -1,6 +1,6 @@
 package FactoryPattern.BetterCode;
 
-public class CoffeeMaker {
+public class Factory {
 
   Coffee coffee;
 
